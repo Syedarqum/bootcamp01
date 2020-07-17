@@ -30,11 +30,13 @@ jobs:
       with:
         # Yarn command
         cmd: install
+    - name: Creating build
+      run: yarn build
+          
     - name: intsalling Surge
       run : npm -g install surge
       
-    - name: Creating build
-      run: yarn build
+    
 
     - name : deploying on surge 
       run: surge./build http://arqum_bootcamp1.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
