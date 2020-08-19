@@ -1,6 +1,8 @@
 import React from 'react';
-function Dinner(){
+function Dinner(props){
     return(
-    <h1>Pakistan is serving cake today</h1>)
-}
+        <div> <h1>Pakistan is serving cake today</h1>
+        <h1>Hm dekhein gey</h1>
+    <h1>Today we are serving {Props.serving}</h1></div>)
+   }
  export default Dinner;
